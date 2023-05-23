@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B9E8B6"
+    android:id="@+id/mainLayout"
+    tools:context=".GameActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/firstImageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/DifferenceChecker1"
+        android:layout_width="420dp"
+        android:layout_height="420dp"
+        android:src="@drawable/image1"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription">
+
+    </ImageButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondImageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstImageLayout">
+
+        <ImageButton
+            android:id="@+id/DifferenceChecker2"
+            android:layout_width="420dp"
+            android:layout_height="420dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image2"
+            tools:ignore="ContentDescription">
+
+        </ImageButton>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/wrongPress"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginStart="115dp"
+        android:src="@drawable/wrong"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints">
+
+    </ImageView>
+
+    <RatingBar
+        android:id="@+id/ratingBarForLife"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:numStars="3"
+        android:rating="3"
+        android:stepSize="1"
+        android:visibility="visible"
+        android:progressTint="#06CD0E"
+        android:progressBackgroundTint="#a8a8a8"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        />
+<LinearLayout
+    android:layout_width="73dp"
+    android:layout_height="33dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="190dp"
+    android:layout_alignParentTop="true">
+    <TextView
+        android:id="@+id/remainingDifference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text=" 0"
+        android:textColor="#EF0909"
+        android:visibility="visible"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/outOfFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#06CD0E"
+        android:visibility="visible"
+        android:text=" / 5"
+        android:textStyle="bold">
+
+    </TextView>
+</LinearLayout>
+
+</RelativeLayout>

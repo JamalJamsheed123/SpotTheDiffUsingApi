@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FindDiff</string>
+
+    <string name="FindDiff">Spot The Difference</string>
+
+    <string name="GameStart">Start</string>
+    <string name="Next">Next Level</string>
+    <string name="Home">Home</string>
+
+    <string name="LevelsSelect">Select Level</string>
+
+    <string name="LevelsNumber1">Level 1</string>
+    <string name="remainingDifferce1">1</string>
+    <string name="remainingDifferce2">2</string>
+    <string name="remainingDifferce3">3</string>
+    <string name="remainingDifferce4">4</string>
+    <string name="remainingDifferce5">5</string>
+
+</resources>
